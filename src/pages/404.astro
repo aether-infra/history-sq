@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="404 — Coordinate Unresolved" 
+  description="The manuscript node or path query you sought lies outside the active Enneagrammatic Blueprint."
+>
+  <main class="site-main">
+    <section class="shsq-404-container reveal">
+      
+      <!-- Eyebrow Tag -->
+      <div class="hero-eyebrow">ANOMALY DETECTED // 404 BOUNDARY</div>
+      
+      <!-- Large Illuminated Code -->
+      <h1 class="shsq-404-code">404</h1>
+      
+      <!-- Headline & Subheadline -->
+      <h2 class="shsq-404-title">COORDINATE UNRESOLVED IN THE ARCHIVE</h2>
+      <p class="hero-subheadline">
+        The manuscript node or path query you sought lies outside the active Enneagrammatic Blueprint.
+      </p>
+
+      <!-- Callout Box -->
+      <div class="shsq-callout">
+        <h3>CHRONICLE DISRUPT NOTICE</h3>
+        <p>
+          Under the stewardship of Sophia Mysterion, our archive evaluates every node as an active psychological map. The requested record may have been re-indexed during master grid updates, moved to an enclave tier, or dissolved into the unconditioned source code.
+        </p>
+      </div>
+
+      <!-- Search Integration -->
+      <div class="shsq-404-search-wrapper">
+        <form role="search" method="get" class="search-form" action="/search">
+          <input 
+            type="search" 
+            class="search-input" 
+            name="q" 
+            placeholder="Search the Sacred Archives..." 
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="search-button" aria-label="Execute Archive Search">
+            Search
+          </button>
+        </form>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="hero-ctas">
+        <a href="/" class="btn btn-primary">Return to Main Archive</a>
+        <a href="/#hubs" class="btn btn-ghost">Map the Nine Hubs</a>
+      </div>
+
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .site-main {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+    background: radial-gradient(circle at 50% 30%, rgba(197, 160, 89, 0.05) 0%, transparent 70%);
+  }
+
+  .shsq-404-container {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #c5a059;
+    margin-bottom: 1rem;
+  }
+
+  .shsq-404-code {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(5rem, 15vw, 8.5rem);
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    color: #c5a059;
+    text-shadow: 0 0 40px rgba(197, 160, 89, 0.35);
+    letter-spacing: 0.08em;
+  }
+
+  .shsq-404-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    letter-spacing: 0.12em;
+    color: #f3f3f3;
+    margin: 1.5rem 0 1rem;
+    text-transform: uppercase;
+  }
+
+  .hero-subheadline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #a8a8a8;
+    max-width: 540px;
+    margin: 0 auto 2.5rem;
+  }
+
+  /* Callout Card */
+  .shsq-callout {
+    background: rgba(18, 18, 18, 0.7);
+    border: 1px solid rgba(197, 160, 89, 0.25);
+    border-left: 3px solid #c5a059;
+    padding: 1.5rem 1.75rem;
+    text-align: left;
+    margin-bottom: 2.5rem;
+    backdrop-filter: blur(8px);
+  }
+
+  .shsq-callout h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.15em;
+    color: #c5a059;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  .shsq-callout p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #bcbcbc;
+    margin: 0;
+  }
+
+  /* Search Bar */
+  .shsq-404-search-wrapper {
+    margin-bottom: 2.5rem;
+  }
+
+  .search-form {
+    display: flex;
+    max-width: 480px;
+    margin: 0 auto;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    background: #141414;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .search-form:focus-within {
+    border-color: #c5a059;
+    box-shadow: 0 0 15px rgba(197, 160, 89, 0.2);
+  }
+
+  .search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 0.85rem 1.25rem;
+    color: #f3f3f3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+  }
+
+  .search-input::placeholder {
+    color: #666;
+  }
+
+  .search-button {
+    background: #c5a059;
+    border: none;
+    color: #121212;
+    padding: 0 1.5rem;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.25s ease;
+  }
+
+  .search-button:hover {
+    background: #dfbc77;
+  }
+
+  /* Action Buttons */
+  .hero-ctas {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.85rem 1.75rem;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary {
+    background: #c5a059;
+    color: #121212;
+    font-weight: 600;
+    border: 1px solid #c5a059;
+  }
+
+  .btn-primary:hover {
+    background: transparent;
+    color: #c5a059;
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: #c5a059;
+    border: 1px solid rgba(197, 160, 89, 0.4);
+  }
+
+  .btn-ghost:hover {
+    border-color: #c5a059;
+    background: rgba(197, 160, 89, 0.08);
+  }
+
+  @media (max-width: 600px) {
+    .search-form {
+      flex-direction: column;
+    }
+    .search-button {
+      padding: 0.75rem;
+    }
+    .hero-ctas {
+      flex-direction: column;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+</style>

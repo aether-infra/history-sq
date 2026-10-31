@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="The Transmission Gate"
+  description="Establish a secure uplink with the archive administrators by proving compliance with the architectural blueprints."
+>
+  <main class="site-wrapper section" style="padding-top: 140px; min-height: 100vh;">
+    
+    <!-- HERO -->
+    <header class="shsq-hub-hero reveal">
+      <span class="archive-eyebrow" style="color: var(--shsq-gold); margin-bottom: 15px;">Protocol: Inbound Communications</span>
+      <h1 style="text-transform: uppercase;">The Transmission Gate</h1>
+      <p>
+        This frequency is heavily monitored. The Master Matrix was constructed to preemptively neutralize the mechanical questions of the sleeping mind. Prove your compliance with the architecture to establish a secure uplink.
+      </p>
+    </header>
+
+    <hr style="border: 0; border-top: 1px solid var(--shsq-gold-line); margin: 60px auto; max-width: 800px;">
+
+    <!-- CIPHER LOCK SCREEN -->
+    <div id="cipher-lock-screen" class="reveal reveal-delay-1" style="max-width: 600px; margin: 0 auto; background: rgba(10, 15, 25, 0.8); border: 1px solid var(--shsq-gold); padding: 50px; text-align: center; box-shadow: var(--shadow-obsidian);">
+      
+      <h3 style="font-family: var(--font-display); color: var(--shsq-gold); margin-top: 0; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px;">Authorization Required</h3>
+      
+      <p style="color: var(--shsq-parchment); margin-bottom: 30px; font-size: 1.05rem; line-height: 1.6;">
+        Identify the Blind Architect. Name the counterfeit creator who built the material matrix without possessing the pristine light.
+      </p>
+
+      <input type="text" id="cipher-input" placeholder="Enter Cipher..." autocomplete="off" style="width: 100%; box-sizing: border-box; background: var(--shsq-void); border: 1px solid var(--shsq-gold-line); color: var(--shsq-parchment); padding: 15px; font-family: var(--font-ui); text-align: center; font-size: 1.2rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; outline: none; transition: var(--transition);">
+      
+      <button id="cipher-submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        Attempt Uplink
+      </button>
+
+      <p id="cipher-error" style="color: #C97A6A; font-family: var(--font-ui); font-size: 0.85rem; margin-top: 20px; margin-bottom: 0; text-transform: uppercase; letter-spacing: 1px; display: none;">
+        Transmission Denied. The mechanical mind remains asleep. Consult Hub I.
+      </p>
+
+    </div>
+
+    <!-- SUCCESS SCREEN (Hidden by default) -->
+    <div id="true-transmission-gate" style="display: none; max-width: 800px; margin: 0 auto; animation: fadeIn 1s ease-in; padding: 0 20px;">
+      
+      <div style="text-align: center; margin-bottom: 40px;">
+        <p style="color: #6AB5C9; font-family: var(--font-ui); font-weight: bold; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 10px; font-size: 0.85rem;">&gt; Cipher Accepted. Encryption Lifted.</p>
+        <h3 style="font-family: var(--font-display); color: var(--shsq-parchment); font-size: 2.2rem; margin: 0; text-transform: uppercase;">Secure Channel Open</h3>
+      </div>
+
+      <div class="shsq-terminal-prompt" style="margin: 0 auto; box-shadow: none;">
+        <h2 style="font-size: 1.4rem;">Direct Link Established</h2>
+        <p>
+          You have successfully bypassed the Archontic filter. You may now direct your inquiries, dossier requests, or transmission data directly to the archive administrators.
+        </p>
+        <a href="mailto:transmission@sacredhistoryquest.com" class="btn btn-primary">
+          Initiate Secure Email &rarr;
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+</Layout>
+
+<!-- CIPHER LOGIC SCRIPT -->
+<script>
+  function initializeCipherLock() {
+    const inputField = document.getElementById('cipher-input');
+    const submitBtn = document.getElementById('cipher-submit');
+    const errorMsg = document.getElementById('cipher-error');
+    const lockScreen = document.getElementById('cipher-lock-screen');
+    const successScreen = document.getElementById('true-transmission-gate');
+
+    // Prevent errors if the script runs on a page without these elements
+    if (!inputField || !submitBtn) return;
+
+    // Master Array of acceptable answers
+    const validKeys = ['yaldabaoth', 'demiurge', 'saklas', 'samael', 'the demiurge'];
+
+    const attemptUplink = () => {
+      const userInput = inputField.value.toLowerCase().trim();
+
+      if (validKeys.includes(userInput)) {
+        // SUCCESS: Hide the lock, reveal the gate
+        lockScreen.style.display = 'none';
+        successScreen.style.display = 'block';
+      } else {
+        // FAIL: Display error and shake input field
+        errorMsg.style.display = 'block';
+        inputField.style.borderColor = '#C97A6A'; // Denying Force Red
+        inputField.value = ''; // Clear the wrong answer
+        
+        // Shake Animation using Web Animations API
+        inputField.animate([
+          { transform: 'translateX(10px)' },
+          { transform: 'translateX(-10px)' },
+          { transform: 'translateX(10px)' },
+          { transform: 'translateX(0)' }
+        ], { duration: 300 });
+      }
+    };
+
+    // Bind events
+    submitBtn.addEventListener('click', attemptUplink);
+    inputField.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        attemptUplink();
+      }
+    });
+  }
+
+  // Fires on initial hard load and View Transition navigation
+  document.addEventListener('astro:page-load', initializeCipherLock);
+</script>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
