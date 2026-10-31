@@ -1,51 +1,20 @@
-# Astro Starter Kit: Minimal
+# THE SACRED HISTORY QUEST // HISTORYSQ.COM
 
-```sh
-npm create astro@latest -- --template minimal
-```
+> The uncompromising archive of the esoteric continuum. Ancient mythologies, hermetic manuscripts, and sacred ciphers decoded not as passive dogma, but as operational psychological maps engineered for cosmic escape.
 
-<!-- ASTRO:REMOVE:START -->
+`HistorySQ.com` is a high-performance, statically compiled research codex and sovereign analytical engine. Modeled upon the sacred geometry of the Enneagram, the platform deconstructs two millennia of theological curation to recover the underlying cybernetic and psychological operating system of the human soul.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+---
 
-<!-- ASTRO:REMOVE:END -->
+## 🏛️ The Directive: Recovery of the Operating System
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+For centuries, orthodox institutions sanitized historical and esoteric records, reducing empirical systems of liberation to historical trivia or moral allegory. 
 
-## 🚀 Project Structure
+**The Sacred History Quest** operates under the silent stewardship of **Sophia Mysterion**, founded upon a single uncompromising axiom:  
+*Esoteric manuscripts are functional psychological maps and mechanical schematics engineered to dismantle the mechanical sleep of the conditioned ego, neutralize parasitic loops, and crystallize the permanent "I."*
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## 🧭 The 3×3 Enneagrammatic Matrix
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The archive is architected as an interconnected 9-point cosmic grid organized by the Triadic forces of Creation: the **Holy-Affirming**, **Holy-Denying**, and **Holy-Reconciling**.
